@@ -1,0 +1,214 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e4e3e3da;
+    margin: 0;
+    height: 100vh;
+    /* background-color: #f4f4f4; */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    position: relative;
+    padding: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+    /* background: url(img/shared3.png) */
+}
+
+.logo {
+
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 100px;
+    display: inline;
+
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.corner-img {
+    position: absolute;
+    margin-top: 10px;
+    /* margin-left: 10px; */
+    top: 0;
+    left: 0;
+    max-width: 150px; /* Ajusta el tamaño de la imagen transparente */
+    min-width: 100px;
+    display: inline;
+    height: auto;
+    z-index: 1; /* Asegura que la imagen esté encima del contenido de la tarjeta */
+    opacity: 0.8; /* Ajusta la opacidad según sea necesario */
+  }
+  
+
+/* ?============================== */
+#redessociales {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 64px;
+  height: 64px;
+  /* border: 2px solid  #40658a ; */
+
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 15px 25px -4px rgba(0, 0, 0, 0.5), inset 0 -3px 4px -1px rgba(0, 0, 0, 0.2), 0 -10px 15px -1px rgba(255, 255, 255, 0.6), inset 0 3px 4px -1px rgba(255, 255, 255, 0.2), inset 0 0 5px 1px rgba(255, 255, 255, 0.8), inset 0 20px 30px 0 rgba(255, 255, 255, 0.2);
+  /* background: url(img/shared3.png) */
+  border-radius: 68.8px;
+  background: url(../img/menu.png);
+
+  /* background: url(https://4.bp.blogspot.com/-gKMIOgeaEBY/UWHsOA382oI/AAAAAAAABpI/5GdyRTAeKII/s1600/share_core_square.jpg) */
+}
+
+.smedia {
+  position: absolute;
+-webkit-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
+-moz-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1),opacity 1s linear;
+-o-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
+  display: inline;
+  opacity: 0;
+  width: 46px;
+  height: 46px;
+  z-index: 100;
+  margin:10px 0px 0px 20px;
+  text-indent: -9999px;
+  background: no-repeat;
+  left:3px;
+}
+
+#redessociales:hover .smedia {
+  opacity: 1;
+  transform: translate(0px,0);
+  -webkit-transform: translate(0px,0);
+  -o-transform: translate(0px,0); 
+  -moz-transform: translate(0px,0);
+  margin:10px 0px 0px 20px;
+  position: absolute;
+}
+
+#redessociales:hover .smedia:nth-child(1) {
+  position: absolute;
+  left:65px;
+}
+
+#redessociales:hover .smedia:nth-child(2) {
+  position: absolute;
+  left:110px;
+}
+#redessociales:hover .smedia:nth-child(3) {
+  position: absolute;
+  left:155px;
+}
+#redessociales:hover .smedia:nth-child(4) {
+  position: absolute;
+  left:200px;
+}
+#redessociales:hover .smedia:nth-child(5) {
+  position: absolute;
+  left:245px;
+}
+
+#redessociales:hover .smedia:nth-child(6) {
+  position: absolute;
+  left:290px;
+}
+
+.smedia.facebook {
+    background: url(https://4.bp.blogspot.com/-49s_0_9mdVo/UWHsMIvJBNI/AAAAAAAABn8/6bVMlN4Qz7Y/s1600/bubble_facebook_share_button.png);
+}
+.smedia.twitter {
+    background: url(https://2.bp.blogspot.com/-3r8sHe1Qy5M/UWHsNMDDzHI/AAAAAAAABog/q3V7mYirmOY/s1600/bubble_twitter_share_button.png);
+}
+.smedia.email {
+    background: url(https://3.bp.blogspot.com/-ZhFqBhp79cA/UWHsMBmPxsI/AAAAAAAABn4/O8k_pGf1oCU/s1600/bubble_email_share_button.png);
+}
+.smedia.instagram {
+    background: url(https://1.bp.blogspot.com/-FSkby0cXU_8/UWHsMis8c2I/AAAAAAAABoQ/y8coyc5ystc/s1600/bubble_instagram_share_button.png);
+}
+.smedia.youtube {
+    background: url(https://4.bp.blogspot.com/-x2oyT1dBzwA/UWHsNtcWXVI/AAAAAAAABo8/8kCXTVMbM6Y/s1600/bubble_youtube_share_button.png);
+}
+.smedia.vimeo {
+    background: url(https://2.bp.blogspot.com/-01SWPeX-584/UWHsNim9CAI/AAAAAAAABo4/Z9jMox_9UrE/s1600/bubble_vimeo_share_button.png);
+}
+.smedia:hover {
+    background-position: 0 -46px;
+}
+
+
+
+ 
+
+/* ============= boton whastApps ============== */
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:30px;
+	right:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation: breathe 2s ease-in-out infinite;
+}
+    .float:hover {
+    text-decoration: none;
+    color: #25d366;
+    border-color:  #25d366  ;
+    background-color:#fff;
+    }
+
+    .my-float{
+        animation: beat 2s ease-in-out infinite;
+        margin-top:16px;
+    }
+
+
+    /*Estilos con animation contorno respirando*/
+    @keyframes breathe {
+        0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+        }
+        70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+        }
+        100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+    }
+    
+    /*Estilos de animacion del icono latiendo*/
+    @keyframes beat {
+        0% {
+        transform: scale(1);
+        }
+        50% {
+        transform: scale(1.2);
+        }
+        100% {
+        transform: scale(1);
+        }
+    }
+
